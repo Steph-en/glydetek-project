@@ -26,7 +26,7 @@ export class SignupComponent {
       await this.authService.signup(this.userData);
       this.successMessage = 'Signup successful! You can now <a routerLink="/login">login</a>.';
       this.errorMessage = '';
-      this.userData = { username: '', email: '', password: '' }; // Clear form
+      this.userData = { username: '', email: '', password: '' };
     } catch (error: any) {
       this.errorMessage = error.message;
       this.successMessage = '';

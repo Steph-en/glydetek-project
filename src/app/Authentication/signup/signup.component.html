@@ -1,19 +1,21 @@
-<h2>Sign Up</h2>
-<form (ngSubmit)="signup()">
-    <div>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" [(ngModel)]="userData.username" required>
-    </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" [(ngModel)]="userData.email" required>
-    </div>
-    <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" [(ngModel)]="userData.password" required>
-    </div>
-    <button type="submit">Sign Up</button>
-    <p class="error-message" *ngIf="errorMessage">{{ errorMessage }}</p>
-    <p class="success-message" [innerHTML]="successMessage"></p>
-    <p>Already have an account? <a routerLink="/login">Login</a></p>
-</form>
+<div class="container">
+    <h2>Sign Up</h2>
+    <form (ngSubmit)="signup()">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" [(ngModel)]="userData.username" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" [(ngModel)]="userData.email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" [(ngModel)]="userData.password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+        <p class="error-message" *ngIf="errorMessage">{{ errorMessage }}</p>
+        <p class="success-message" [innerHTML]="successMessage"></p>
+        <p>Already have an account? <a routerLink="/login">Login</a></p>
+    </form>
+</div>
