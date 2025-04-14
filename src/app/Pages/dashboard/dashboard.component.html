@@ -1,8 +1,10 @@
-<h2>User Dashboard</h2>
+<div class="container">
+    <h2>Dashboard</h2>
 
-<div *ngIf="currentUser$ | async as user">
-  <p><strong>Username:</strong> {{ user?.username }}</p>
-  <p><strong>Email:</strong> {{ user?.email }}</p>
+    <div class="p" *ngIf="currentUser$ | async as user">
+        <p><strong>Username:</strong> {{ user?.username }}</p>
+        <p><strong>Email:</strong> {{ user?.email }}</p>
+    </div>
+
+    <button (click)="logout()">Logout</button>
 </div>
-
-<button (click)="logout()">Logout</button>
