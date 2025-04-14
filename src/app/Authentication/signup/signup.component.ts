@@ -20,7 +20,6 @@ export class SignupComponent {
   errorMessage = '';
   successMessage = '';
   private authService = inject(AuthService);
-  private router = inject(Router);
 
   async signup(): Promise<void> {
     try {
