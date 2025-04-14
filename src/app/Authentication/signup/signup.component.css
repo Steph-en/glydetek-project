@@ -1,0 +1,8 @@
+/* Add your CSS styles here */
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
