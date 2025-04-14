@@ -19,9 +19,9 @@ export const appConfig: ApplicationConfig = {
     provideFirestore(() => getFirestore()),
     AuthService,
     {
-      provide: 'canActivateDashboard', // You can use a string token
+      provide: 'canActivateDashboard',
       useValue: AuthGuard,
-      multi: true, // If multiple guards can apply to a route
+      multi: true,
     },
   ],
 };
